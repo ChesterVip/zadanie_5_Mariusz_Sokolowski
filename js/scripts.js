@@ -8,22 +8,20 @@ const trIndex = document.querySelectorAll('tr th')
 //tablice
 const tableNames = ['Piotr', 'Adam', 'Anna', 'Monika'];
 const tableSurnames = ['Kania', 'Nowak', 'Kowalska', 'Maszczykowska'];
-const lp = [1, 2, 3, 4];
 
 
 
 
-for(let i = 0; i < lp.length; i++){
+for(let i = 0; i < tableNames.length; i++){
     const tr = document.createElement('tr');
     tBody.appendChild(tr);
     console.log(i);
     for(let j = 0; j < trIndex.length; j++){
         const td = document.createElement(`td`);
         tr.appendChild(td);
-        console.log(td.dir);
         switch (j){
             case 0: 
-            td.textContent = lp[i]
+            td.textContent = i + 1;
             break
             case 1:
                 td.textContent = tableSurnames[i]
