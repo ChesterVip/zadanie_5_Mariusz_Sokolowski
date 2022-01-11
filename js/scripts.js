@@ -7,12 +7,12 @@ const trIndex = document.querySelectorAll('tr th')
 
 //tablice
 const tableNames = ['Piotr', 'Adam', 'Anna', 'Monika'];
-const tableSurnames = ['Kania', 'Nowak', 'Kowalska', 'Maszczykowska'];
+const tableSurnames = ['Kania', 'Nowak', 'Kowalska', 'Maszczykowska', 'Sokolowski'];
 
 
 
 
-for(let i = 0; i < tableNames.length; i++){
+for(let i = 0; i < tableNames.length && tableSurnames;  i++){
     const tr = document.createElement('tr');
     tBody.appendChild(tr);
     for(let j = 0; j < trIndex.length; j++){
