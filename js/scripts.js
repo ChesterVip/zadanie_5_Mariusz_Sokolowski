@@ -15,7 +15,6 @@ const tableSurnames = ['Kania', 'Nowak', 'Kowalska', 'Maszczykowska'];
 for(let i = 0; i < tableNames.length; i++){
     const tr = document.createElement('tr');
     tBody.appendChild(tr);
-    console.log(i);
     for(let j = 0; j < trIndex.length; j++){
         const td = document.createElement(`td`);
         tr.appendChild(td);
