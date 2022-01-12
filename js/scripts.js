@@ -13,13 +13,16 @@ const tableSurnames = ['Kania', 'Nowak', 'Kowalska', 'Maszczykowska'];
 
 
 for(let i = 0; (i < tableNames.length && i < tableSurnames.length); i++){
+    //dodanie nowego wiersza
     const tr = document.createElement('tr');
     tBody.appendChild(tr);
     for(let j = 0; j < trIndex.length; j++){
+        //dodanie kolumn do wiersza ilosc kolumn === ilosc tytulów
         const td = document.createElement(`td`);
         tr.appendChild(td);
         let index = 0;
         switch (j){
+                //poprzez switch dodajemy content do kolumny. Content okresla index wiersza tj. wiersz 1 === pierwsza wartosc z tabeli a wiec tabela[0].
             case 0: 
                 td.textContent = i + 1;
             break
