@@ -12,22 +12,25 @@ const tableSurnames = ['Kania', 'Nowak', 'Kowalska', 'Maszczykowska'];
 
 
 
-for(let i = 0; i < tableNames.length && i < tableSurnames.length;  i++){
+for(let i = 0; (i < tableNames.length && i < tableSurnames.length); i++){
     const tr = document.createElement('tr');
     tBody.appendChild(tr);
     for(let j = 0; j < trIndex.length; j++){
         const td = document.createElement(`td`);
         tr.appendChild(td);
+        let index = 0;
         switch (j){
             case 0: 
-            td.textContent = i + 1;
+                td.textContent = i + 1;
             break
-            case 1:
-                td.textContent = tableSurnames[i]
-                break
-                case 2:
-                    td.textContent = tableNames[i]
-                    break
+        case 1:
+            td.textContent = tableSurnames[i]
+            break
+        case 2:
+            td.textContent = tableNames[i]
+            break
+        default:
+            td.textContent = 'dodaj tablicę aby dodac wartośc do tabeli'
                 }
             }
             
