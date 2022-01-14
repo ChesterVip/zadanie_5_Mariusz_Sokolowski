@@ -6,8 +6,8 @@ const tBody = document.querySelector('tbody');
 const trIndex = document.querySelectorAll('tr th')
 
 //tablice
-const tableNames = ['Piotr', 'Adam', 'Anna', 'Monika','s',2];
-const tableSurnames = ['Kania', 'Nowak', 'Kowalska', 'Maszczykowska', 'h'];
+const tableNames = ['Piotr', 'Adam', 'Anna', 'Monika','Mariusz'];
+const tableSurnames = ['Kania', 'Nowak', 'Kowalska', 'Maszczykowska',];
 let index = 0;
 
 for(let i = 0; (i < tableNames.length && i < tableSurnames.length); i++){
