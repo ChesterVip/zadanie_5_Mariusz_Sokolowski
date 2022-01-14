@@ -6,11 +6,9 @@ const tBody = document.querySelector('tbody');
 const trIndex = document.querySelectorAll('tr th')
 
 //tablice
-const tableNames = ['Piotr', 'Adam', 'Anna', 'Monika','s'];
-const tableSurnames = ['Kania', 'Nowak', 'Kowalska', 'Maszczykowska'];
-
-
-
+const tableNames = ['Piotr', 'Adam', 'Anna', 'Monika','s',2];
+const tableSurnames = ['Kania', 'Nowak', 'Kowalska', 'Maszczykowska', 'h'];
+let index = 0;
 
 for(let i = 0; (i < tableNames.length && i < tableSurnames.length); i++){
     const tr = document.createElement('tr');
@@ -18,10 +16,9 @@ for(let i = 0; (i < tableNames.length && i < tableSurnames.length); i++){
     for(let j = 0; j < trIndex.length; j++){
         const td = document.createElement(`td`);
         tr.appendChild(td);
-        let index = 0;
         switch (j){
             case 0: 
-                td.textContent = i + 1;
+                td.textContent = ++index;
             break
         case 1:
             td.textContent = tableSurnames[i]
@@ -31,6 +28,7 @@ for(let i = 0; (i < tableNames.length && i < tableSurnames.length); i++){
             break
         default:
             td.textContent = 'dodaj tablicę aby dodac wartośc do tabeli'
+
                 }
             }
             
