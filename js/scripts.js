@@ -14,7 +14,7 @@ for(let i = 0; (i < tableNames.length && i < tableSurnames.length); i++){
     const tr = document.createElement('tr');
     tBody.appendChild(tr);
     for(let j = 0; j < trIndex.length; j++){
-        const td = document.createElement(`td`);
+        const td = document.createElement('td');
         tr.appendChild(td);
         switch (j){
             case 0: 
